@@ -1,0 +1,179 @@
+/* font-family: 'Audiowide', cursive;
+font-family: 'Cinzel Decorative', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Audiowide', cursive;
+  background-image: linear-gradient(90 deg, #09203f, #537895);
+  /* background-color: #fd5e53; */
+  /* #09203f → #537895 */
+}
+/* nav */
+nav{
+  padding: 10px;
+  margin: 3px 0;
+  position: absolute;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1  ;
+  border-bottom: 2px solid rgba(225, 225, 225,.5);
+}
+nav a{
+  cursor: url('../images/link.png'),auto;
+  font-size: 2.5vw;
+  text-decoration: none;
+  font-variant: small-caps;
+  color: white;
+}
+/* nav on scroll */
+.navbar{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 2;
+}
+.navbar a{
+  font-size: 2vw;
+  text-decoration: none;
+  font-variant: small-caps;
+  color: white;
+}
+
+
+/* main page */
+
+
+.main-page {
+  background-color: rgba(0, 0, 0,.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: url('../images/circle.png'),auto;
+}
+#main-content{
+  position: absolute;
+  top: 30%;
+  color: white;
+  font-variant: small-caps;
+  left: auto;
+
+}
+#main-content h1{
+  
+  font-size: 8vw;
+  font-family: 'Cinzel Decorative', cursive;
+  text-decoration: none;
+  transition: font-size 2s;
+}
+#main-content hr{
+  border: none;
+  border-bottom: 1px solid white;
+  margin: 2px;
+}
+#main-content p{
+  font-size: 2vw;
+  transition: font-size 2s;
+}
+#bgvideo{
+  background-size: cover;
+  z-index: -1;
+}
+
+/* page 2 */
+#heading{
+  text-align: center;
+  margin: 50px auto;
+  font-size: 5vw;
+  color: #ffffff;
+  font-family:'Cinzel Decorative', cursive;
+}
+
+.card-collection{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+.card{
+  /* font-family: 'Cinzel Decorative', cursive; */
+  cursor: default;
+  width: 20vw;
+  height: 19vw;
+  margin: 20px; 
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 1px rgba(51,8,103,1);
+}
+.card:hover{
+  transform: scale(1.03);
+}
+.card a,
+.card a:link,
+.card a:active,
+.card a:visited,
+.card button{
+  font-variant: small-caps;
+  color: #1b262c;
+  text-decoration: none;
+  cursor: default;
+}
+.card img{
+  width: 100%;
+  /* height: 15vw; */
+  z-index: -1;
+}
+.type-name{
+  margin: 20px;
+}
+.card button{
+  outline: none;
+  border: none;
+  padding: 7px;
+  color: #ffffff;
+  margin: 20px;
+  font-size: 1.5vw;
+  background-color: #24b324;
+  display: none;
+}
+.card button:hover{
+  border: 2px solid #24b324;
+  background-color: transparent;
+  color: black;
+}
+
+/* sticky navbar */
+.sticky{
+  cursor: default;
+  transition: .5s;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2px;
+  box-shadow: 0px 0px 25px;
+}
+.sticky *{
+  cursor: default;
+  transition: .9s;
+  color: #000;
+  font-size: 2vw;
+  margin: auto 10px;
+  text-transform: uppercase;
+}
+.sticky svg path{
+  stroke: black;
+  fill: black;
+}
+.sticky svg circle{
+  stroke: black;
+}
