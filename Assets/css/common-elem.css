@@ -4,7 +4,14 @@
     padding:0;
 }
 body{
-     background: linear-gradient(to right, #4389A2, #5C258D); 
+     /* background: linear-gradient(to right, #4389A2, #5C258D);  */
+     /* background: linear-gradient( to right, #764BA2 , #667EEA);  */
+     /* background: linear-gradient( to right, #FF5F6D, #FFC371); */
+     background: linear-gradient( to right, #11998E, #38EF7D);
+
+
+     
+     
 
 }
 #hut
