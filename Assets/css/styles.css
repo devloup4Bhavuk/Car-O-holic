@@ -7,9 +7,7 @@ font-family: 'Cinzel Decorative', cursive; */
 body {
   overflow-x: hidden;
   font-family: 'Audiowide', cursive;
-  background-image: linear-gradient(90 deg, #09203f, #537895);
-  /* background-color: #fd5e53; */
-  /* #09203f → #537895 */
+  background: linear-gradient( to right, #11998E, #38EF7D);
 }
 /* nav */
 nav{
@@ -71,7 +69,6 @@ nav a{
   font-size: 8vw;
   font-family: 'Cinzel Decorative', cursive;
   text-decoration: none;
-  transition: font-size 2s;
 }
 #main-content hr{
   border: none;
@@ -88,6 +85,7 @@ nav a{
 }
 
 /* page 2 */
+
 #heading{
   text-align: center;
   margin: 50px auto;
@@ -102,7 +100,6 @@ nav a{
   justify-content: space-evenly;
 }
 .card{
-  /* font-family: 'Cinzel Decorative', cursive; */
   cursor: default;
   width: 20vw;
   height: 19vw;
@@ -111,10 +108,10 @@ nav a{
   background-color: #ffffff;
   border-radius: 30px;
   overflow: hidden;
-  /* box-shadow: 0px 0px 20px 1px rgba(51,8,103,1); */
 }
 .card:hover{
   transform: scale(1.03);
+  box-shadow: 0 0 20px 0px #323232;
 }
 .card a,
 .card a:link,
@@ -128,27 +125,13 @@ nav a{
 }
 .card img{
   width: 100%;
-  /* height: 15vw; */
   z-index: -1;
 }
 .type-name{
   margin: 20px;
 }
-.card button{
-  outline: none;
-  border: none;
-  padding: 7px;
-  color: #ffffff;
-  margin: 20px;
-  font-size: 1.5vw;
-  background-color: #24b324;
-  display: none;
-}
-.card button:hover{
-  border: 2px solid #24b324;
-  background-color: transparent;
-  color: black;
-}
+
+
 
 /* sticky navbar */
 .sticky{
@@ -176,4 +159,80 @@ nav a{
 }
 .sticky svg circle{
   stroke: black;
+}
+
+/* Table */
+.Contact{
+  /* height: 30vh; */
+  text-align: center;
+  background-color: #323232;
+  margin: 40px 0 0;
+  padding: 50px 10px;
+}
+table,.Contact h1{
+  padding: 10px;
+  color: #ffffff;
+  margin: 0;
+  font-size: 2.7vw;
+  text-align: center;
+  margin: 10px auto;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.Contact h1{
+  width: 100%;
+}
+.Contact h1 span{
+  font-size: 2.5vw;
+  font-variant: small-caps;
+  line-height: 2;
+  font-family: 'Audiowide', cursive;
+}
+input,table button{
+  font-size: 1.5vw;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #323232;
+  padding: 5px;
+  text-align: center;
+  margin: 10px 15px;
+}
+input[type="email"]{
+  width: 60%;
+}
+table button{
+  padding: 5px 20px;
+  
+}
+
+table button:hover{
+  transition: .8s;
+  color: #ffff;
+  background: linear-gradient( to right, #11998E, #38EF7D);
+}
+
+/* animation css */
+
+#main-content h1,#main-content hr,#main-content p{
+  animation: main-content .5s linear;
+}
+@keyframes main-content {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+nav{
+  animation: nav .5s linear;
+}
+@keyframes nav{
+  from{
+    transform: translate(0,-100px);
+  }
+  to{
+    transform: translate(0,0);
+  }
 }

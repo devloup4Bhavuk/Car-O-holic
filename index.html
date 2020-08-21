@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car-O-Holic</title>
     <link rel="stylesheet" href="./Assets/css/logo-anim.css" />
-    <link rel="stylesheet" href="./Assets/css/common-elem.css" />
     <link rel="stylesheet" href="./Assets/css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
   </head>
@@ -16,6 +15,9 @@
         <a href="./abut-us.html">About Us</a>
         <a href="./index.html">
           <div id="logo">
+
+
+
             <svg width="150" height="50" viewBox="0 0 490 164" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="BODY">
               <g id="Vector 1">
@@ -31,6 +33,11 @@
               <path id="Vector 4" d="M108.871 84.7654L43.88 147.024L38 140.886L108.871 84.7654Z" fill="white" stroke="white" stroke-linejoin="round"/>
               </g>
             </svg>
+
+
+
+
+
           </div>
         </a>
         <a href="./quiz.html">Quiz</a>
@@ -59,7 +66,7 @@
           <a href="./Assets/template pages/compact.html">
             <img src="./Assets/images/Cards/compact.jfif"></img>
             <h1 class="type-name">Compact</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -69,7 +76,7 @@
           <a href="./Assets/template pages/convertible.html">
             <img src="./Assets/images/Cards/convertible.jfif"></img>
             <h1 class="type-name">Convertible</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -79,7 +86,7 @@
           <a href="./Assets/template pages/coupe.html">
             <img src="./Assets/images/Cards/coupe.jpg"></img>
             <h1 class="type-name">Coupe</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -89,7 +96,7 @@
           <a href="./Assets/template pages/crossover.html">
             <img src="./Assets/images/Cards/crossover.jpg"></img>
             <h1 class="type-name">Crossover</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -99,7 +106,7 @@
           <a href="./Assets/template pages/electric-or-hybrid.html">
             <img src="./Assets/images/Cards/electric.jpg"></img>
             <h1 class="type-name">Electric</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -109,7 +116,7 @@
           <a href="./Assets/template pages/hatchback.html">
             <img src="./Assets/images/Cards/hatchback.jpg"></img>
             <h1 class="type-name">Hatchback</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -119,7 +126,7 @@
           <a href="./Assets/template pages/off-road.html">
             <img src="./Assets/images/Cards/offroad.jpg"></img>
             <h1 class="type-name">Off-road</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -129,7 +136,6 @@
           <a href="./Assets/template pages/pickup.html">
             <img src="./Assets/images/Cards/pick up.jpg"></img>
             <h1 class="type-name">Pick Up</h1>
-            <button>Read More</button>
           </a>
         </div>
 
@@ -139,7 +145,7 @@
           <a href="./Assets/template pages/sedan.html">
             <img src="./Assets/images/Cards/sedan.jpg"></img>
             <h1 class="type-name">Sedan</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -149,7 +155,7 @@
           <a href="./Assets/template pages/sports-car.html">
             <img src="./Assets/images/Cards/sports.jpg"></img>
             <h1 class="type-name">Sports Car</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -159,7 +165,7 @@
           <a href="./Assets/template pages/suv.html">
             <img src="./Assets/images/Cards/suv.jpg"></img>
             <h1 class="type-name">SUV</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
 
@@ -173,22 +179,28 @@
           <a href="./Assets/template pages/van.html">
             <img src="./Assets/images/Cards/van.jpg"></img>
             <h1 class="type-name">Van</h1>
-            <button>Read More</button>
+            
           </a>
         </div>
       </div>
 
       <div class="Contact">
-        <caption>To Contact Us Fill this Form</caption>
+        <h1>Never Miss Important Updates <br> <span>SignUp For our NewsLetter</span> </h1>
         <table>
+          
           <tbody>
+            <form action="">
             <tr>
-              <td><input type="text" placeholder="FIRST NAME" required>*</td>
+              <td><input type="text" id="name" name="name" placeholder="FIRST NAME" required></td>
               <td><input type="text" placeholder="LAST NAME"></td>
             </tr>
             <tr>
-              <td colspan="2"><input type="numer"  pattern="[0-9]{10}" placeholder="PHONE NUMBER"></td>
+              <td colspan="2"><input id="email" name="email" type="email" placeholder="Email Id" required></td>
             </tr>
+            <tr>
+              <td colspan="2"><button id="submit">Submit</button></td>
+            </tr>
+          </form>
           </tbody>
         </table>
       </div>

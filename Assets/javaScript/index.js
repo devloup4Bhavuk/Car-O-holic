@@ -35,3 +35,26 @@ const showSlide = () =>{
     document.getElementById("a"+image).style.display ='inherit';
 }
 showSlide();
+
+// toggle bar
+
+document.getElementById("toggle").addEventListener("click",()=>{
+    var toggleDiv = document.getElementById("redir");
+    if(toggleDiv.style.display == "none"){
+        toggleDiv.style.display = "inherit";
+    }
+    else{
+        toggleDiv.style.display = "none"
+    }
+})
+
+// list of cars
+
+document.getElementById("btn-a").addEventListener("click",()=>{
+    document.getElementById("l1").style.display = "inherit";
+    document.getElementById("l2").style.display = "none";
+})
+document.getElementById("btn-b").addEventListener("click",()=>{
+    document.getElementById("l2").style.display = "inherit";
+    document.getElementById("l1").style.display = "none";
+})

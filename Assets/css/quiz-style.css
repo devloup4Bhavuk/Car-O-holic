@@ -24,12 +24,12 @@
     width:20vw;
     height:10vh;
     position: relative;
-    margin-left: 70vw;
+    left: 70vw;
     top:3.5vh;
     border: 3px solid white;
     border-radius:15px;
     background-color:#000;
-    text-align: right;
+    text-align: center;
      
 }
 #ques-heading
@@ -76,7 +76,7 @@ button:hover
 body{
     /* background: linear-gradient(to right, #ff5f6d , #ffc371); */
     background-color: #5b6467;
-    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    background: linear-gradient( to right, #11998E, #38EF7D);
 }
 #Q
 {  width:77vw;
@@ -174,5 +174,15 @@ input[type='radio']
    background-color: limegreen;
 }
 
+.result{
+    background-color: #fff;
+    font-size: 3vw;
+    font-weight: bolder;
+    color:#000; 
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    width: 70%;
+}
 
 
