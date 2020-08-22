@@ -184,5 +184,7 @@ input[type='radio']
     margin: 10px auto;
     width: 70%;
 }
-
+button{
+    outline: none;
+}
 

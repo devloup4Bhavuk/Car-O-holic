@@ -108,8 +108,16 @@ nav a {
   display: flex;
   padding: 10px;
   height: 41vw;
+  animation: body .4s linear;
 }
-
+@keyframes body{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 #slides {
   height: 40vw;
   width: 37vw;
@@ -118,6 +126,7 @@ nav a {
 }
 
 .car {
+  transition: 2s;
   position: relative;
   height: 40vw;
   width: 37vw;
@@ -174,12 +183,16 @@ nav a {
   margin-bottom: 5px;
 }
 
+
+
 .list-page {
   width: 66vw;
   position: relative;
   margin: auto;
 }
 .list-item {
+  transform: scale(1);
+  transition: transform 2s;
   font-family: "Poppins", sans-serif;
   /* background-color: #1f4068; */
   background-image: linear-gradient(45deg, #206a5d, #1f4068);
@@ -191,7 +204,10 @@ nav a {
   justify-content: space-around;
   /* box-shadow: 4px 4px grey; */
 }
-
+.list-item:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 10px 2px #000000;
+}
 .best-car {
   width: 15vw;
   height: 15vh;
@@ -223,13 +239,18 @@ nav a {
 }
 
 .pgchng {
+  outline: none;
   border-radius: 50%;
   padding: 10px;
-  margin: 4px;
+  font-size: 1.5vw;
+  color: #fff;
+  margin: 4px 100px;
   border: 2px black solid;
-  background-color: #dededd;
+  background-color: #1b1c25;
 }
-
+.pgchng:hover{
+  transform: scale(0.7);
+}
 /* page 3 */
 
 .page3 {
@@ -350,9 +371,21 @@ nav a {
   height: 10vh;
   margin-top: 6px;
 }
-
+/* navbar */
 .navbar{
   
   position: fixed;
   transition: position 3s;
+}
+
+nav{
+  animation: nav 1s linear;
+}
+@keyframes nav{
+  from{
+    transform: translate(0,-100px);
+  }
+  to{
+    transform: translate(0,0);
+  }
 }
