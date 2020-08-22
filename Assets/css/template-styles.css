@@ -303,7 +303,7 @@ nav a {
 }
 .outdiv {
   width: 23vw;
-  height: 23vw;
+  height: 29vw;
   border: 2px black solid;
   margin: 20px;
   padding: 15px;
@@ -313,7 +313,7 @@ nav a {
 }
 .inrdiv {
   width: 21vw;
-  height: 21vw;
+  height: 27vw;
   border: 2px black solid;
   background-color: white;
   border-radius: 30px;
@@ -349,4 +349,10 @@ nav a {
   width: 7vw;
   height: 10vh;
   margin-top: 6px;
+}
+
+.navbar{
+  
+  position: fixed;
+  transition: position 3s;
 }

@@ -58,3 +58,19 @@ document.getElementById("btn-b").addEventListener("click",()=>{
     document.getElementById("l2").style.display = "inherit";
     document.getElementById("l1").style.display = "none";
 })
+
+
+
+const navbar      = document.querySelector("nav"),
+      navposition = navbar.offsetTop;
+
+
+document.addEventListener("scroll",()=>{
+    if(window.pageYOffset > navposition){
+        navbar.classList.add("navbar");
+        
+    }
+    else{
+        navbar.classList.remove("navbar")
+    }
+})
