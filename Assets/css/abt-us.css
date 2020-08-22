@@ -1,83 +1,68 @@
-*
-{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background: linear-gradient( to right, #11998E, #38EF7D);
+body {
+  background: linear-gradient(to right, #11998e, #38ef7d);
 }
-#hut
-{
-    position: absolute;
-    top:1px;
-    left:1px;
+#hut {
+  position: absolute;
+  top: 1px;
+  left: 1px;
 }
-#Q
-{  width:77vw;
-   height:14.5vh;
-   margin-left:30vw;
-   margin-top: 3vw;
-   padding-left:2vw;
-   font-size: 5vw;
-   font-weight: bolder;
-   color:#fff;
-   text-shadow: 2px 10px 10px #000;
-
+#Q {
+  width: 77vw;
+  height: 14.5vh;
+  margin-left: 30vw;
+  margin-top: 3vw;
+  padding-left: 2vw;
+  font-size: 5vw;
+  font-weight: bolder;
+  color: #fff;
+  text-shadow: 2px 10px 10px #000;
 }
-.main
-{
-    width:100%;
-    overflow: hidden;
+.main {
+  width: 100%;
+  overflow: hidden;
 }
-.member
-{
-    display:flex;
-    justify-content: space-between;
-    width: 67vw;
-    margin:25px 100px 0;
-    padding:0 40px;
-    text-align: center;
-
+.member {
+  display: flex;
+  justify-content: space-between;
+  width: 67vw;
+  margin: 25px 100px 0;
+  padding: 0 40px;
+  text-align: center;
 }
-.image
-{
- width:20vw;
- height:20vw;
- /* border:6px solid #fff; */
- border-radius: 50%;
- box-shadow: 0 0 20px ;
-
+.image {
+  width: 20vw;
+  height: 20vw;
+  /* border:6px solid #fff; */
+  border-radius: 50%;
+  box-shadow: 0 0 20px;
 }
-.name
-{
-    font-size:4vw;
-    font-family: Cinzel Decorative;
-    font-weight: bold;
-    color: #fff;
-
+.name {
+  font-size: 4vw;
+  font-family: Cinzel Decorative;
+  font-weight: bold;
+  color: #fff;
 }
-.detail
-{
-display: flex;
-flex-direction: column;
-justify-content:center;
-
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 0 0 4px black;
 }
 
-.detail hr
-{
-    width:65%;
-    margin:10px auto; 
+.detail hr {
+  width: 65%;
+  margin: 10px auto;
 }
-p
-{
-    
-    font-size: 1.6vw;
-    color: #fff;
-    font-weight: lighter;
+p {
+  font-size: 1.6vw;
+  color: #fff;
+  font-weight: lighter;
 }
-.member:nth-child(2n+1)
-{
-    flex-direction: row-reverse;
-    float: right; 
+.member:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+  float: right;
 }
